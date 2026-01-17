@@ -97,3 +97,34 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# === [강사님 추천: 유니티/IDE 프로젝트 파일] ===
+*.DotSettings
+*.csproj
+*.pidb
+*.sln
+*.suo
+*.unityproj
+*.user
+*.userprefs
+/Build/
+/Library/
+/Logs/
+/Temp/
+/obj/
+
+# === [하샘님 연구 특화: 데이터 및 로그 보호] ===
+# 하샘님의 통계적 풀링(ASP) 연구 과정에서 생성되는 대용량 데이터 보호
+/[Aa]ssets/StreamingAssets/Logs/
+/[Aa]ssets/DataDump/
+*.log
+*.csv
+*.xlsx
+
+# === [OS 및 기타 임시 파일] ===
+.DS_Store
+Thumbs.db
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
