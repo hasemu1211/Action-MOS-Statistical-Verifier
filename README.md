@@ -1,5 +1,4 @@
 # Action-MOS-Statistical-Verifier
-Statistical Action-MOS: Verifying robot behavior quality using Higher-Order Statistics Pooling.
 
 📈 Statistical Action-MOS: Robust Behavior Verifier
 "Beyond Success: Quantifying the 'Quality' of Robot Motion through Higher-Order Statistics"
