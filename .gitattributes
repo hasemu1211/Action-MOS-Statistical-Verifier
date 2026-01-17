@@ -1,12 +1,11 @@
 *.unitypackage filter=lfs diff=lfs merge=lfs -text
 *.fbx filter=lfs diff=lfs merge=lfs -text
 *.onnx filter=lfs diff=lfs merge=lfs -text
-# 1. Wolfram Language로 오해받는 데이터 파일들만 통계에서 제외
-*.asset linguist-vendored
-*.unity linguist-vendored
-*.mat linguist-vendored
-*.meta linguist-vendored
-*.prefab linguist-vendored
+# 1. 유니티 프로젝트 내의 모든 파일을 일단 통계에서 제외 (Vendored 처리)
+UnityProject/** linguist-vendored
 
-# 2. (중요) 유니티 내의 C# 코드는 명확하게 통계에 포함
-**/*.cs linguist-detectable
+# 2. 하지만 그 안의 C# 코드(.cs)만은 명확하게 다시 살려내기
+UnityProject/**/*.cs linguist-detectable linguist-vendored=false
+
+# 3. 루트에 있는 파이썬 코드 등은 당연히 포함
+*.py linguist-detectable
